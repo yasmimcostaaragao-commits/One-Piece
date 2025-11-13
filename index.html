@@ -2,242 +2,181 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Escola AFESU Morro Velho Profissional</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece - Escola do Grande Tesouro</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Estilos personalizados -->
   <style>
     body {
+      background-color: #fdf3e3;
       font-family: 'Poppins', sans-serif;
-      background-color: #fff8f2;
-      scroll-behavior: smooth;
     }
-
-    /* Cores principais */
-    :root {
-      --rosa: #ff7eb9;
-      --laranja: #ffb84d;
-      --amarelo: #fff275;
-    }
-
-    /* Navbar */
     .navbar {
-      background: linear-gradient(90deg, var(--rosa), var(--laranja), var(--amarelo));
+      background-color: #001f54;
     }
-
-    .navbar-brand {
-      font-weight: 700;
-      color: white !important;
+    .navbar-brand, .nav-link {
+      color: #ffd700 !important;
+      font-weight: 600;
     }
-
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
-      margin: 0 8px;
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ff3b3b !important;
     }
-
-    header {
-      background: linear-gradient(90deg, var(--rosa), var(--laranja));
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-weight: 700;
-    }
-
-    /* Carrossel */
-    .carousel-item img {
+    .carousel-inner img {
       height: 500px;
       object-fit: cover;
     }
-
-    /* Cartões */
     .card {
       border: none;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
+      background-color: #fff8e7;
     }
-
     .card:hover {
       transform: scale(1.05);
     }
-
     .card-title {
-      color: var(--laranja);
-      font-weight: 600;
+      color: #001f54;
+      font-weight: bold;
     }
-
     footer {
-      background: linear-gradient(90deg, var(--laranja), var(--rosa));
-      color: white;
-      text-align: center;
+      background-color: #001f54;
+      color: #fff;
       padding: 30px 0;
-      margin-top: 40px;
     }
-
     footer a {
-      color: white;
+      color: #ffd700;
       text-decoration: none;
     }
-
     footer a:hover {
-      text-decoration: underline;
-    }
-
-    .section-title {
-      color: var(--rosa);
-      font-weight: 700;
+      color: #ff3b3b;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 🌸 Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <!-- 🔹 Cabeçalho -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#inicio">AFESU Morro Velho</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <a class="navbar-brand" href="#inicio">🏴‍☠️ One Piece</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="menu">
+      <div class="collapse navbar-collapse" id="menuNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tripulacao">Tripulação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- 🎓 Cabeçalho -->
-  <header id="inicio" class="pt-5 mt-5">
-    <div class="container">
-      <h1>Escola AFESU Morro Velho Profissional</h1>
-      <p class="lead mt-3">Transformando vidas através da educação profissional e do aprendizado contínuo 💛</p>
-    </div>
-  </header>
+  <!-- 🔹 Carrossel -->
+  <section id="inicio" class="mt-3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+      </div>
 
-  <!-- 🎠 Carrossel -->
-  <section class="mt-4">
-    <div id="carouselAfesu" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://i.imgur.com/VH6iKfB.jpg" class="d-block w-100" alt="Sala de aula moderna">
+          <img src="imagens/ce42dfd6dcd006c7b05c9a231a80e79d.jpg" class="d-block w-100" alt="Luffy">
         </div>
         <div class="carousel-item">
-          <img src="https://i.imgur.com/lvbn5Ai.jpg" class="d-block w-100" alt="Alunas estudando">
+          <img src="imagens/ffacb6f2475c5cb2db90593ad69643f4.jpg" class="d-block w-100" alt="Zoro">
         </div>
         <div class="carousel-item">
-          <img src="https://i.imgur.com/As0tSgR.jpg" class="d-block w-100" alt="Laboratório de informática">
+          <img src="imagens/a747764bf38c6121e0a8d8b46f6b3400.jpg" class="d-block w-100" alt="Nami">
         </div>
         <div class="carousel-item">
-          <img src="https://i.imgur.com/VAtp9ya.jpg" class="d-block w-100" alt="Eventos e formaturas">
+          <img src="imagens/a41d2c4fc574f2f2f8f65b5d07b28aa7.jpg" class="d-block w-100" alt="Sanji">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAfesu" data-bs-slide="prev">
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselAfesu" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
   </section>
 
-  <!-- 📚 Cursos -->
-  <section id="cursos" class="py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Nossos Cursos Profissionalizantes</h2>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://i.imgur.com/HxVv1jS.jpg" class="card-img-top" alt="Informática">
-            <div class="card-body">
-              <h5 class="card-title">Informática</h5>
-              <p class="card-text">Aprenda habilidades digitais, pacote Office, programação e navegação segura na internet.</p>
-            </div>
+  <!-- 🔹 Sobre -->
+  <section id="sobre" class="container mt-5 text-center">
+    <h2 class="mb-4 text-primary fw-bold">Sobre o Projeto Educacional</h2>
+    <p class="lead">Este site tem o objetivo de ensinar valores inspirados em <strong>One Piece</strong>: amizade, coragem, determinação e o desejo de alcançar sonhos. Aqui, exploramos o mundo dos piratas com propósito educativo, conectando aventura e aprendizado.</p>
+  </section>
+
+  <!-- 🔹 Cards da Tripulação -->
+  <section id="tripulacao" class="container mt-5">
+    <h2 class="text-center text-danger fw-bold mb-4">Tripulação do Chapéu de Palha</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="imagens/093c4838360d6d06501e98fdc32f4648.jpg" class="card-img-top" alt="Luffy">
+          <div class="card-body">
+            <h5 class="card-title">Monkey D. Luffy</h5>
+            <p class="card-text">O capitão sonhador que busca o One Piece e acredita na força da amizade.</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://i.imgur.com/4yoGyoC.jpg" class="card-img-top" alt="Administração">
-            <div class="card-body">
-              <h5 class="card-title">Administração</h5>
-              <p class="card-text">Desenvolva competências em gestão, finanças, atendimento e comunicação profissional.</p>
-            </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="imagens/f826acdd941ac7c68d3fb1ecad57bbd3.jpg" class="card-img-top" alt="Zoro">
+          <div class="card-body">
+            <h5 class="card-title">Roronoa Zoro</h5>
+            <p class="card-text">Espadachim determinado, cujo sonho é ser o melhor do mundo.</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://i.imgur.com/XdTOdyo.jpg" class="card-img-top" alt="Design Gráfico">
-            <div class="card-body">
-              <h5 class="card-title">Design Gráfico</h5>
-              <p class="card-text">Crie projetos visuais com ferramentas modernas e aprenda fundamentos de arte digital.</p>
-            </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="imagens/bbf51febe6164637a064f21db1ca0465.jpg" class="card-img-top" alt="Nami">
+          <div class="card-body">
+            <h5 class="card-title">Nami</h5>
+            <p class="card-text">Navegadora inteligente que sonha em mapear o mundo inteiro.</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://i.imgur.com/CnO5vP4.jpg" class="card-img-top" alt="Atendimento ao Cliente">
-            <div class="card-body">
-              <h5 class="card-title">Atendimento ao Cliente</h5>
-              <p class="card-text">Aprenda técnicas de comunicação, empatia e excelência no atendimento ao público.</p>
-            </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="imagens/b57cdbc9f87989a2c480195c60475d45.jpg" class="card-img-top" alt="Sanji">
+          <div class="card-body">
+            <h5 class="card-title">Sanji</h5>
+            <p class="card-text">Cozinheiro apaixonado e cavalheiro, que busca o All Blue, o mar lendário.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 💡 Sobre -->
-  <section id="sobre" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title mb-3">Sobre a Escola</h2>
-      <p class="mx-auto w-75">A <strong>AFESU Morro Velho</strong> é uma instituição dedicada à formação educacional e profissional de jovens e mulheres, promovendo o desenvolvimento pessoal e a inserção no mercado de trabalho. Com valores de solidariedade, ética e compromisso social, buscamos inspirar sonhos e construir futuros brilhantes 🌷✨</p>
-    </div>
+  <!-- 🔹 Galeria -->
+  <section id="galeria" class="container text-center mt-5 mb-5">
+    <h2 class="text-primary fw-bold mb-4">Galeria de Aventuras</h2>
+    <p>Confira momentos marcantes e lugares lendários que inspiram o aprendizado!</p>
+    <img src="imagens/fc32f41477bb4cd5a0322d6e767b65a9.gif" class="img-fluid rounded shadow-lg" alt="Thousand Sunny">
   </section>
 
-  <!-- 📞 Contato -->
-  <section id="contato" class="py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Fale Conosco</h2>
-      <form class="row g-3 justify-content-center">
-        <div class="col-md-4">
-          <input type="text" class="form-control" placeholder="Seu nome" required>
-        </div>
-        <div class="col-md-4">
-          <input type="email" class="form-control" placeholder="Seu e-mail" required>
-        </div>
-        <div class="col-md-8">
-          <textarea class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
-        </div>
-        <div class="col-md-8">
-          <button type="submit" class="btn btn-warning text-white fw-bold">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- 🌈 Rodapé -->
-  <footer>
+  <!-- 🔹 Rodapé -->
+  <footer id="contato" class="text-center">
     <div class="container">
-      <p class="mb-1">© 2025 Escola AFESU Morro Velho Profissional</p>
-      <p class="mb-0">
-        <a href="#inicio">Início</a> ·
-        <a href="#cursos">Cursos</a> ·
-        <a href="#sobre">Sobre</a> ·
-        <a href="#contato">Contato</a>
-      </p>
-      <p class="mt-2">Feito com 💗 por estudantes dedicados e Bootstrap 5</p>
+      <p class="mb-1">📍 Escola do Grande Tesouro - Inspirada em One Piece</p>
+      <p>Email: <a href="mailto:contato@onepieceedu.com">contato@onepieceedu.com</a></p>
+      <div class="mt-3">
+        <a href="#inicio">Voltar ao topo</a>
+      </div>
+      <hr class="my-3" style="color:#ffd700;">
+      <p class="mb-0">© 2025 One Piece Educacional. Todos os direitos reservados. 🏴‍☠️</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
